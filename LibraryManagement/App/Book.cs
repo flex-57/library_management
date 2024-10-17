@@ -17,5 +17,10 @@
             string availability = isAvailable ? "Disponible" : "Indisponible";
             return $"\"{title}\" de {author} ({availability})";
         }
+
+        public override string ToString()
+        {
+            return title + " - " + author;
+        }
     }
 }
